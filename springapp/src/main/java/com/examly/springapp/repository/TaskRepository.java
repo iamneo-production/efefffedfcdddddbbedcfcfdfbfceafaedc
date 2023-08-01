@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface TaskRepository extends JpaRepository<Task,String> {
 
-    @Query(value = "select *from task where task_holder_name=:id",nativeQuery = true)
-    Task getTaskByName(@Param("id") String id);
+    @Query(value = "select *from task where task_holder_name=:taskId",nativeQuery = true)
+    Task getTaskByName(@Param("taskId") String taskId);
 }
 

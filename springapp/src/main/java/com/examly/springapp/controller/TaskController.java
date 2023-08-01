@@ -34,8 +34,8 @@ public class TaskController {
     }
 
     @GetMapping("/getTask")
-    public Task getTaskByName(@RequestParam String id){
-        return this.taskService.getTaskByName(id);
+    public Task getTaskByName(@RequestParam String taskId){
+        return this.taskService.getTaskByName(taskId);
     }
 
 }

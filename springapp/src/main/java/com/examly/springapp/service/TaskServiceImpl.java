@@ -36,7 +36,7 @@ public class TaskServiceImpl implements TaskService{
     }
 
     @Override
-    public Task getTaskByName(String id) {
-        return this.taskRepository.getTaskByName(id);
+    public Task getTaskByName(String taskId) {
+        return this.taskRepository.getTaskByName(taskId);
     }
 }
