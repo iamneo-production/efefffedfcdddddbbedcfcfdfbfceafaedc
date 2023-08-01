@@ -1,6 +1,6 @@
 package com.examly.springapp.model;
 
-public class TasksDto {
+public class TaskDto {
 
     private String taskId;
 
@@ -16,9 +16,9 @@ public class TasksDto {
 
     private String taskStatus;
 
-    private String houseNo;
+    private String houseNo="8-35";
 
-    public TasksDto(String taskId, String taskHolderName, String taskDate, String taskName, String taskStatus, String houseNo) {
+    public TaskDto(String taskId, String taskHolderName, String taskDate, String taskName, String taskStatus, String houseNo) {
         this.taskId = taskId;
         this.taskHolderName = taskHolderName;
         this.taskDate = taskDate;
@@ -27,7 +27,7 @@ public class TasksDto {
         this.houseNo = houseNo;
     }
 
-    public TasksDto() {
+    public TaskDto() {
         super();
     }
 
@@ -71,12 +71,12 @@ public class TasksDto {
         this.taskStatus = taskStatus;
     }
 
-    public String getHouseNo() {
-        return houseNo;
-    }
+    // public String getHouseNo() {
+    //     return houseNo;
+    // }
 
-    public void setHouseNo(String houseNo) {
-        this.houseNo = houseNo;
-    }
+    // public void setHouseNo(String houseNo) {
+    //     this.houseNo = houseNo;
+    // }
 }
 

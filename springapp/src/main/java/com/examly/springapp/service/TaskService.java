@@ -12,7 +12,7 @@ public interface TaskService {
 
     String deleteTaskById(String id);
 
-    List<Task> getAllTasks();
+    List<TaskDto> getAllTasks();
 
     Task getTaskByName(String id);
 }
