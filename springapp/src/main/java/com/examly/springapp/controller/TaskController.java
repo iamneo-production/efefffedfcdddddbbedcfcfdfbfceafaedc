@@ -23,7 +23,7 @@ public class TaskController {
         return this.taskService.getTaskById(taskId);
     }
 
-    @DeleteMapping("/deleteTask")
+    @GetMapping("/deleteTask")
     public void deleteTaskById(@RequestParam String taskId){
          this.taskService.deleteTaskById(taskId);
     }
