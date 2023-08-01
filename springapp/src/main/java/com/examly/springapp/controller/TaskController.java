@@ -24,8 +24,8 @@ public class TaskController {
     }
 
     @DeleteMapping("/deleteTask")
-    public String deleteTaskById(@RequestParam String id){
-        return this.taskService.deleteTaskById(id);
+    public void deleteTaskById(@RequestParam String id){
+         this.taskService.deleteTaskById(id);
     }
 
     @GetMapping("/alltasks")
