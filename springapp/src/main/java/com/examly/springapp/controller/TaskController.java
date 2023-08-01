@@ -29,7 +29,7 @@ public class TaskController {
     }
 
     @GetMapping("/alltasks")
-    public List<TaskDto> getAllTasks(){
+    public List<Task> getAllTasks(){
         return this.taskService.getAllTasks();
     }
 

@@ -32,7 +32,7 @@ public class TaskServiceImpl implements TaskService{
     }
 
     @Override
-    public List<TaskDto> getAllTasks() {
+    public List<Task> getAllTasks() {
         return this.taskRepository.findAll();
     }
 
